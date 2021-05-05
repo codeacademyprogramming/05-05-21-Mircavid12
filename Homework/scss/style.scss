@@ -1,7 +1,7 @@
 @import "libs/variables";
 @import "libs/mixins";
 @import "partials/navbar";
-@import "partials/content-right"
+@import "partials/content-right";
 
 @include col-x;
 @include bg-color;
@@ -31,20 +31,6 @@
 .p-0{
     padding: 0;
 }
-.container{
-    @include breaker('xs'){
-        width: 100%;
-    }
-    @include breaker('sm'){
-        width: 540px;
-    }
-    @include breaker('md'){
-        width: 720px;
-    }
-    @include breaker('lg'){
-        width: 960px;
-    }
-}
 
 .d-flex{
     display: flex;
@@ -56,7 +42,6 @@
 
 // Framework
 
-
-
-
-
+*{
+    box-sizing: border-box;
+}
