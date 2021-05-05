@@ -1,0 +1,126 @@
+.left-side{
+    font-family: $main-font;
+    .declaration{
+        border: 1px solid #9DC2FF;
+        border-radius: 8px;
+        padding: 10px 0;
+        position: relative;
+        img{
+            position: absolute;
+            left: 8%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        a{
+            @extend .link;
+            color: $primary-color;
+            font-size: 24px;
+            font-weight: 700;
+            padding-left: 35px;
+        }
+    }
+    .department-list{
+        @extend .list;
+        text-align: left;
+        li{
+            padding: 10px 0;
+            a{
+                @extend .link;
+                color: #19191D;
+                font-size: 14px;
+            }
+            p{
+                font-size: 14px;
+                color: #787885;
+            }
+            img{
+                margin-left: -20px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .electronics{
+        @extend .list;
+        .cell-phones{
+            @extend .list;
+            li{
+                &:last-child{
+                    a{
+                        background: #EBF2FF;
+                        border-radius: 4px;
+                        padding: 10px 30px 10px 15px;
+                        color: $primary-color;
+                        font-weight: 700;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+        }
+        li{
+            &:last-child{
+                a{
+                    background: #EBF2FF;
+                        border-radius: 4px;
+                        padding: 10px 30px 10px 15px;
+                        color: $primary-color;
+                        font-weight: 700;
+                }
+            }
+        }
+    }
+    h6{
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10px 0 0 10px;
+    }
+    .filter{
+        margin-top: 20px;
+        text-align: left;
+        background: #F7F7FA;
+        border-radius: 4px;
+        .filter-list{
+            @extend .list;
+            li{
+                margin-top: 20px;
+                margin-left: 15px;
+                span{
+                    padding: 0 8px;
+                    border: 1px solid #19191D;
+                }
+                a{
+                    @extend .link;
+                    color: #19191D;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .manufacturing{
+        margin-top: 40px;
+        text-align: left;
+        background: #F7F7FA;
+        border-radius: 4px;
+        .manufacturing-list{
+            @extend .list;
+            li{
+                margin-top: 20px;
+                margin-left: 15px;
+                span{
+                    padding: 0 8px;
+                    border: 1px solid #19191D;
+                }
+                a{
+                    @extend .link;
+                    color: #19191D;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

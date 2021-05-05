@@ -2,6 +2,7 @@
 @import "libs/mixins";
 @import "partials/navbar";
 @import "partials/content-right";
+@import "partials/content-left";
 
 @include col-x;
 @include bg-color;
@@ -30,6 +31,9 @@
 }
 .p-0{
     padding: 0;
+}
+.m-0{
+    margin: 0;
 }
 
 .d-flex{
