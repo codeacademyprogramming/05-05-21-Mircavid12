@@ -1,0 +1,61 @@
+@import "libs/variables";
+@import "libs/mixins";
+@import "partials/navbar";
+
+@include col-x;
+@include bg-color;
+@include text-color;
+
+// Extend
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+// Extend
+
+
+// Framework
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p-0{
+    padding: 0;
+}
+.container{
+    @include breaker('xs'){
+        width: 100%;
+    }
+    @include breaker('sm'){
+        width: 540px;
+    }
+    @include breaker('md'){
+        width: 720px;
+    }
+    @include breaker('lg'){
+        width: 960px;
+    }
+}
+
+.d-flex{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+// Framework
+
+
+
+
+

@@ -1,0 +1,23 @@
+$columns: 12;
+
+$breakpoints:(
+'xs':0px,
+'sm':576px,
+'lg':992px,
+'md': 768px
+);
+
+$colors:(
+'light':#f8f9fa,
+'info':#17a2b8,
+'warning':#ffc107,
+'danger':#dc3545,
+'success':#28a745,
+'dark':#343a40,
+'secondary':#6c757d,
+'primary':#007bff
+);
+
+$primary-color:#2264D1;
+$secondary-color:#EDEDF0;
+$main-font: sans-serif;

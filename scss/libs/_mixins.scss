@@ -1,0 +1,47 @@
+@mixin breaker($breakpoint){
+    @if $breakpoint=='xs' {
+        @media screen and (min-width:480px){
+            @content;
+        }
+    }
+    @else if $breakpoint=='sm' {
+        @media screen and (min-width:576px){
+            @content;
+        }
+    }
+    @else if $breakpoint=='md' {
+        @media screen and (min-width:768px){
+            @content;
+        }
+    }
+    @else if $breakpoint=='lg' {
+        @media screen and (min-width:992px){
+            @content;
+        }
+    }
+}
+
+@mixin col-x {
+    @each $key,$value in $breakpoints {
+
+        @for $i from 1 through $columns {
+            .col-#{$key}-#{$i} { width: 100%; }
+        }
+        @media screen and (min-width: $value) {
+            @for $i from 1 through $columns {
+                .col-#{$key}-#{$i} { width: 100%/12 * $i !important; }
+            }
+        }
+    }
+}
+
+@mixin bg-color{
+    @each $key,$value in $colors {
+        .bg-#{$key} { background-color: $value;}
+    }
+}
+@mixin text-color{
+    @each $key,$value in $colors {
+        .text-#{$key} { color: $value;}
+    }
+}
