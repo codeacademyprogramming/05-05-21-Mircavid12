@@ -45,3 +45,11 @@
         .text-#{$key} { color: $value;}
     }
 }
+@mixin button{
+    color: $primary-color;
+    border: 1px solid #9DC2FF;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: $main-font;
+}
