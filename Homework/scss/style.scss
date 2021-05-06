@@ -1,0 +1,51 @@
+@import "libs/variables";
+@import "libs/mixins";
+@import "partials/navbar";
+@import "partials/content-right";
+@import "partials/content-left";
+
+@include col-x;
+@include bg-color;
+@include text-color;
+
+// Extend
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+// Extend
+
+
+// Framework
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p-0{
+    padding: 0;
+}
+.m-0{
+    margin: 0;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+// Framework
+
+*{
+    box-sizing: border-box;
+}
